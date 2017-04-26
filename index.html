@@ -10,11 +10,21 @@
 <script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
 <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
 <script type="text/javascript" src="lib/hash.js"></script>
+<script>
 
+$(window).load(function(){
+
+$('#loading_pages').hide();
+$('#done').html("Done loading pages!");
+});
+</script>
 </head>
-<body>
+<body style="background-color:purple">
+<div style="height: 50px;width: 100%;border-style: dashed;" align="center">
 <h4 >Click At center or double click any where to zoom-------------For Small Screens(Smartphones) Grab any corner of the page and pull to turn over!!</h4>
-
+<p id="done" style="font-weight: bold"></p>
+<img src="img/load.gif" id="loading_pages">
+</div>
 
 <div id="canvas">
 
@@ -79,6 +89,16 @@
 				<img src="pages/17-thumb.jpg" width="76" height="100" class="page-17">
 				<span>16-17</span>
 			</li>
+			<li class="d">
+				<img src="pages/18-thumb.jpg" width="76" height="100" class="page-18">
+				<img src="pages/19-thumb.jpg" width="76" height="100" class="page-19">
+				<span>18-19</span>
+			</li>
+			<li class="d">
+				<img src="pages/20-thumb.jpg" width="76" height="100" class="page-20">
+				<img src="pages/21-thumb.jpg" width="76" height="100" class="page-21">
+				<span>20-21</span>
+			</li>
 			
 		<ul>
 	<div>	
@@ -134,7 +154,7 @@ function loadApp() {
 
 			// The number of pages
 
-			pages: 17,
+			pages: 21,
 
 			// Events
 

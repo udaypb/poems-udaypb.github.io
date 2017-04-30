@@ -2,15 +2,34 @@
 <html lang="en">
 <head>
 <title>Using turn.js and the new zoom feature</title>
-<meta name="viewport" content="width = 1050, user-scalable = no" />
+<meta name="viewport" content="width = 1050, user-scalable = yes" />
 <link rel="icon" type="image/png" href="pics/favicon.png" />
 <script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
 <script type="text/javascript" src="extras/jquery-ui-1.8.20.custom.min.js"></script>
 <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
 <script type="text/javascript" src="lib/hash.js"></script>
-</head>
-<body>
+<script>
 
+$(window).load(function(){
+
+$('#loading_pages').hide();
+$('#done').html("Done loading pages!");
+ $('#modal1').modal('open');
+});
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('#modal1').modal('open');
+  });
+</script>
+</head>
+<body style="background-color:purple">
+<div style="width: 100%;border-style: dashed;font-size: 20px" class="container" align="center">
+<h4 style="font-size: 20px">Click At center or double click any where to zoom For Small Screens(Smartphones) Grab any corner of the page and pull to turn over!!</h4>
+<p id="done" style="font-weight: bold"></p>
+<img src="img/load.gif" id="loading_pages">
+</div>
 <div id="canvas">
 
 <div class="zoom-icon zoom-icon-in"></div>
@@ -76,7 +95,7 @@ function loadApp() {
 
 			// The number of pages
 
-			pages: 15,
+			pages: 21,
 
 			// Events
 

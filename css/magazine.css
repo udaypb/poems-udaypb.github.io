@@ -1,5 +1,5 @@
 body{
-	overflow:hidden;
+	/*overflow:hidden;*/
 	background-color:#fcfcfc;
 	margin:0;
 	padding:0;
@@ -11,7 +11,7 @@ body{
 	left:50%;
 	width:922px;
 	height:700px;
-	margin:auto;
+	/*margin:auto;*/
 }
 
 .magazine-viewport .magazine{
@@ -218,7 +218,7 @@ body{
 .thumbnails > div{
 	width:1050px;
 	height:100px;
-	margin:20px auto;
+	margin:0px auto;
 }
 
 .thumbnails ul{
